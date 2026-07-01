@@ -1,0 +1,2086 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hair Transplant Workshop 2026 | PILULA x GeVa</title>
+  <meta name="description" content="Workshop hands-on de trasplante capilar para medicos, con pacientes reales, del 26 al 30 de octubre de 2026 en Latitud Polanco, CDMX. Cupo limitado.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700;750;800;850;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #030303;
+      --color-surface: #0b0a08;
+      --color-ink: #11100d;
+      --color-text: #fffaf0;
+      --color-muted: rgba(255, 250, 240, .62);
+      --color-soft: rgba(255, 250, 240, .42);
+      --color-line: rgba(255, 250, 240, .15);
+      --color-card: rgba(255, 250, 240, .055);
+      --color-gold: #d7b64a;
+      --color-gold-strong: #f0cf5d;
+      --color-gold-soft: #ffe39a;
+      --shadow-gold: 0 22px 58px rgba(215, 182, 74, .22);
+      --radius-card: 8px;
+      --radius-cta: 999px;
+      --black: var(--color-bg);
+      --ink: var(--color-ink);
+      --white: var(--color-text);
+      --bone: #f4ead7;
+      --smoke: #c9beac;
+      --gold: var(--color-gold);
+      --gold-soft: var(--color-gold-soft);
+      --burgundy: #4e1f28;
+      --green: #899383;
+      --blue: #8d908d;
+      --line: var(--color-line);
+      --glass: var(--color-card);
+      --font-display: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --font-ui: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --display: var(--font-display);
+      --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --type-hero: clamp(56px, 9.2vw, 138px);
+      --type-scene: clamp(48px, 6.8vw, 104px);
+      --type-body: clamp(14px, 1.05vw, 17px);
+      --tracking-tight: -.04em;
+      --tracking-ui: .02em;
+      --timing-intro-end: .18;
+      --timing-video-start: .06;
+      --timing-manifesto-start: .23;
+      --timing-depth-start: .43;
+      --timing-program-start: .64;
+      --timing-finale-start: .84;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--black);
+      color: var(--white);
+      scroll-behavior: auto;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      letter-spacing: 0;
+      overflow-x: hidden;
+    }
+
+    body.is-loading {
+      cursor: progress;
+    }
+
+    img,
+    video {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    .scroll-plane {
+      height: 1020vh;
+      pointer-events: none;
+    }
+
+    .cinema {
+      position: fixed;
+      inset: 0;
+      isolation: isolate;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 18%, rgba(215, 182, 74, .08), transparent 33%),
+        linear-gradient(180deg, rgba(255, 250, 240, .022), transparent 34%),
+        var(--color-bg);
+      perspective: 2200px;
+      perspective-origin: 50% 48%;
+    }
+
+    .cinema::before,
+    .cinema::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 40;
+      pointer-events: none;
+    }
+
+    .cinema::before {
+      background:
+        linear-gradient(90deg, rgba(0, 0, 0, .42), transparent 18%, transparent 82%, rgba(0, 0, 0, .42)),
+        linear-gradient(0deg, rgba(0, 0, 0, .5), transparent 22%, transparent 75%, rgba(0, 0, 0, .62));
+      mix-blend-mode: multiply;
+    }
+
+    .cinema::after {
+      display: none;
+    }
+
+    .world {
+      position: absolute;
+      inset: 0;
+      transform-style: preserve-3d;
+      will-change: transform;
+      backface-visibility: hidden;
+    }
+
+    .scene-layer,
+    .scene-object,
+    .hud,
+    .chapter-mark {
+      will-change: transform, opacity, filter;
+    }
+
+    .scene-layer {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      transform-style: preserve-3d;
+      pointer-events: none;
+      contain: layout style paint;
+      backface-visibility: hidden;
+    }
+
+    .scene-media {
+      position: absolute;
+      inset: clamp(28px, 5vw, 72px);
+      z-index: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255, 250, 240, .1);
+      border-radius: var(--radius-card);
+      background: #080806;
+    }
+
+    .scene-media img,
+    .scene-media video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .scene-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(3, 3, 3, .74), rgba(3, 3, 3, .18) 42%, rgba(3, 3, 3, .7)),
+        linear-gradient(180deg, rgba(3, 3, 3, .22), rgba(3, 3, 3, .72));
+      pointer-events: none;
+    }
+
+    .top-hud {
+      position: fixed;
+      z-index: 70;
+      top: 18px;
+      left: max(18px, env(safe-area-inset-left));
+      right: max(18px, env(safe-area-inset-right));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      opacity: .82;
+      pointer-events: none;
+    }
+
+    .brand-hud {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+      color: var(--color-muted);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .04em;
+    }
+
+    .brand-hud img {
+      width: clamp(104px, 11vw, 150px);
+      max-height: 42px;
+      object-fit: contain;
+      filter: none;
+      opacity: .72;
+    }
+
+    .progress-hud {
+      display: grid;
+      grid-template-columns: 128px auto;
+      align-items: center;
+      gap: 12px;
+      color: rgba(239, 230, 216, .5);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: .04em;
+    }
+
+    .progress-track {
+      position: relative;
+      width: 128px;
+      height: 1px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .22);
+    }
+
+    .progress-fill {
+      position: absolute;
+      inset: 0;
+      transform: scaleX(0);
+      transform-origin: 0 50%;
+      background: linear-gradient(90deg, var(--color-gold), var(--color-gold-soft));
+    }
+
+    .chapter-mark {
+      position: fixed;
+      z-index: 72;
+      left: max(20px, env(safe-area-inset-left));
+      bottom: max(18px, env(safe-area-inset-bottom));
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--color-muted);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .04em;
+      pointer-events: none;
+    }
+
+    .chapter-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--gold);
+      box-shadow: 0 0 16px rgba(215, 182, 74, .36);
+    }
+
+    .scene-intro {
+      z-index: 10;
+      background:
+        radial-gradient(circle at 50% 76%, rgba(215, 182, 74, .085), transparent 31%),
+        linear-gradient(180deg, rgba(255, 250, 240, .026), transparent 36%),
+        var(--color-bg);
+    }
+
+    .intro-logo {
+      width: min(330px, 54vw);
+      max-height: 96px;
+      object-fit: contain;
+      opacity: .82;
+      filter: none;
+      transform: translate3d(0, -29vh, 0);
+    }
+
+    .intro-title {
+      position: absolute;
+      left: 50%;
+      top: 53%;
+      width: min(1120px, calc(100vw - 56px));
+      transform: translate3d(-50%, -50%, 140px);
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .intro-kicker {
+      margin: 0 auto clamp(16px, 2.6vh, 28px);
+      color: rgba(255, 250, 240, .68);
+      font-size: clamp(13px, 1vw, 16px);
+      font-weight: 450;
+      line-height: 1.45;
+      letter-spacing: .015em;
+      text-shadow: none;
+    }
+
+    .intro-title h1 {
+      margin: 0;
+      font-family: var(--display);
+      font-size: var(--type-hero);
+      font-weight: 850;
+      line-height: .86;
+      letter-spacing: var(--tracking-tight);
+      text-wrap: balance;
+      text-shadow: none;
+    }
+
+    .intro-title p {
+      margin: clamp(18px, 3.1vh, 32px) auto 0;
+      max-width: 700px;
+      color: rgba(255, 250, 240, .7);
+      font-size: clamp(15px, 1.14vw, 18px);
+      font-weight: 550;
+      line-height: 1.7;
+      letter-spacing: .01em;
+    }
+
+    .intro-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px 18px;
+      margin: clamp(14px, 2.4vh, 24px) auto 0;
+      color: rgba(255, 250, 240, .58);
+      font-size: clamp(12px, .9vw, 14px);
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: .015em;
+    }
+
+    .intro-meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .intro-meta span + span::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      margin-right: 18px;
+      background: rgba(239, 230, 216, .28);
+      box-shadow: none;
+    }
+
+    .intro-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-height: 34px;
+      margin-top: clamp(20px, 3.2vh, 34px);
+      min-height: 42px;
+      padding: 0 18px;
+      border: 1px solid rgba(240, 207, 93, .55);
+      border-radius: var(--radius-cta);
+      background: linear-gradient(180deg, var(--color-gold-strong), var(--color-gold));
+      color: #080806;
+      font-size: clamp(12px, .86vw, 14px);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: .015em;
+      text-shadow: none;
+      pointer-events: auto;
+      box-shadow: 0 14px 34px rgba(215, 182, 74, .16);
+      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+    }
+
+    .intro-cta::after {
+      content: "";
+      width: 42px;
+      height: 1px;
+      background: rgba(8, 8, 6, .62);
+      transition: transform .2s ease;
+    }
+
+    .intro-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-gold);
+      filter: brightness(1.04);
+    }
+
+    .intro-cta:hover::after {
+      transform: translateX(4px);
+    }
+
+    .scroll-cue {
+      position: absolute;
+      left: 50%;
+      bottom: 8vh;
+      width: 1px;
+      height: 86px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, .16);
+      transform: translateX(-50%);
+    }
+
+    .scroll-cue span {
+      position: absolute;
+      inset: 0;
+      transform: translateY(-100%);
+      background: linear-gradient(180deg, transparent, var(--color-gold-strong), transparent);
+      animation: cue 1.55s cubic-bezier(.65, 0, .35, 1) infinite;
+    }
+
+    @keyframes cue {
+      0% { transform: translateY(-100%); }
+      70%, 100% { transform: translateY(100%); }
+    }
+
+    .scene-video {
+      z-index: 12;
+      opacity: 0;
+    }
+
+    .film-plane {
+      position: absolute;
+      inset: -1.5vh -1.5vw;
+      overflow: hidden;
+      transform-style: preserve-3d;
+      background: #070606;
+      box-shadow: inset 0 0 0 1px rgba(239, 230, 216, .06);
+    }
+
+    .film-plane::before,
+    .film-plane::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 3;
+      pointer-events: none;
+    }
+
+    .film-plane::before {
+      background:
+        linear-gradient(90deg, rgba(5, 4, 3, .7), rgba(5, 4, 3, .22) 34%, rgba(5, 4, 3, .18) 64%, rgba(5, 4, 3, .62)),
+        linear-gradient(0deg, rgba(5, 4, 3, .72), transparent 30%, transparent 68%, rgba(5, 4, 3, .58));
+    }
+
+    .film-plane::after {
+      inset: 7vh 5vw;
+      border: 1px solid rgba(239, 230, 216, .08);
+      box-shadow: inset 0 0 90px rgba(0, 0, 0, .42);
+    }
+
+    .film-plane video,
+    .film-plane img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .film-plane video {
+      opacity: .86;
+      filter: saturate(.78) contrast(1.16) brightness(.68);
+    }
+
+    .film-plane img {
+      opacity: .28;
+      filter: saturate(.72) contrast(1.12) brightness(.62);
+    }
+
+    .video-caption {
+      position: absolute;
+      right: clamp(72px, 10vw, 150px);
+      bottom: clamp(42px, 9vw, 118px);
+      width: min(400px, calc(100vw - 120px));
+      color: rgba(255, 250, 240, .84);
+      font-size: clamp(14px, 1.12vw, 17px);
+      font-weight: 450;
+      line-height: 1.65;
+      text-align: right;
+      letter-spacing: .01em;
+      text-shadow: none;
+    }
+
+    .scene-manifesto {
+      z-index: 18;
+      opacity: 0;
+    }
+
+    .manifesto-line {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: min(1060px, calc(100vw - 44px));
+      transform: translate3d(-50%, -50%, 220px);
+      opacity: 0;
+      color: var(--white);
+      font-family: var(--display);
+      font-size: var(--type-scene);
+      font-weight: 850;
+      line-height: .92;
+      letter-spacing: var(--tracking-tight);
+      text-align: center;
+      text-wrap: balance;
+      text-shadow: none;
+    }
+
+    .manifesto-subtle {
+      position: absolute;
+      left: 50%;
+      bottom: 12vh;
+      width: min(740px, calc(100vw - 42px));
+      transform: translate3d(-50%, 0, 100px);
+      opacity: 0;
+      color: var(--color-muted);
+      font-size: clamp(14px, 1.1vw, 17px);
+      font-weight: 450;
+      line-height: 1.65;
+      text-align: center;
+      letter-spacing: .01em;
+    }
+
+    .scene-depth {
+      z-index: 24;
+      opacity: 0;
+      padding: clamp(28px, 6vw, 80px);
+      background:
+        radial-gradient(circle at 50% 17%, rgba(215, 182, 74, .07), transparent 30%),
+        linear-gradient(180deg, rgba(255, 250, 240, .02), transparent 38%),
+        var(--color-bg);
+    }
+
+    .depth-frame {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      gap: clamp(42px, 5.6vw, 76px);
+      width: min(1120px, calc(100vw - 48px));
+      text-align: center;
+    }
+
+    .depth-media {
+      inset: clamp(34px, 5vw, 76px);
+      opacity: .72;
+    }
+
+    .depth-media::after {
+      background:
+        linear-gradient(180deg, rgba(3, 3, 3, .58), rgba(3, 3, 3, .68)),
+        linear-gradient(90deg, rgba(3, 3, 3, .72), rgba(3, 3, 3, .32) 50%, rgba(3, 3, 3, .72));
+    }
+
+    .depth-card {
+      min-width: 0;
+      min-height: 176px;
+      padding: clamp(24px, 3vw, 36px);
+      border: 1px solid rgba(255, 250, 240, .13);
+      border-radius: var(--radius-card);
+      background:
+        linear-gradient(180deg, rgba(255, 250, 240, .085), rgba(255, 250, 240, .035)),
+        rgba(255, 250, 240, .035);
+      box-shadow: 0 22px 52px rgba(0, 0, 0, .24);
+      text-align: left;
+    }
+
+    .depth-card b {
+      display: block;
+      color: rgba(240, 207, 93, .76);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .depth-card strong {
+      display: block;
+      margin-top: 32px;
+      color: var(--white);
+      font-family: var(--display);
+      font-size: clamp(28px, 2.7vw, 42px);
+      font-weight: 800;
+      line-height: .96;
+      letter-spacing: -.03em;
+    }
+
+    .depth-card span {
+      display: block;
+      margin-top: 18px;
+      color: var(--color-muted);
+      font-size: 14px;
+      font-weight: 450;
+      line-height: 1.55;
+    }
+
+    .depth-title {
+      width: min(760px, 100%);
+      margin: 0 auto;
+      text-align: center;
+      pointer-events: none;
+    }
+
+    .depth-title h2 {
+      margin: 0;
+      font-family: var(--display);
+      font-size: var(--type-scene);
+      font-weight: 850;
+      line-height: .9;
+      letter-spacing: var(--tracking-tight);
+      text-wrap: balance;
+      text-shadow: none;
+    }
+
+    .depth-title p {
+      margin: 24px auto 0;
+      max-width: 520px;
+      color: var(--color-muted);
+      font-size: clamp(15px, 1.16vw, 18px);
+      font-weight: 450;
+      line-height: 1.65;
+      letter-spacing: .01em;
+    }
+
+    .depth-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: clamp(16px, 2vw, 24px);
+    }
+
+    .scene-laptop {
+      z-index: 30;
+      opacity: 0;
+      padding: clamp(28px, 6vw, 80px);
+      background:
+        radial-gradient(circle at 50% 18%, rgba(215, 182, 74, .055), transparent 30%),
+        linear-gradient(180deg, rgba(255, 250, 240, .02), transparent 36%),
+        var(--color-bg);
+    }
+
+    .laptop-space {
+      display: grid;
+      gap: clamp(26px, 4vw, 48px);
+      width: min(1040px, calc(100vw - 48px));
+      transform: none;
+    }
+
+    .program-panel {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: minmax(0, .95fr) minmax(460px, 1.05fr);
+      align-items: center;
+      gap: clamp(24px, 3.4vw, 48px);
+      width: min(1180px, calc(100vw - 48px));
+    }
+
+    .program-copy {
+      display: grid;
+      gap: clamp(16px, 2.3vw, 26px);
+    }
+
+    .program-media {
+      position: relative;
+      min-height: min(62vh, 620px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 250, 240, .12);
+      border-radius: var(--radius-card);
+      background: #080806;
+      box-shadow: 0 28px 76px rgba(0, 0, 0, .32);
+    }
+
+    .program-media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 36%, rgba(3, 3, 3, .58)),
+        linear-gradient(90deg, rgba(3, 3, 3, .16), rgba(3, 3, 3, .48));
+      pointer-events: none;
+    }
+
+    .program-media-item {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+    }
+
+    .program-media-item img,
+    .program-media-item video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .program-media-label {
+      position: absolute;
+      z-index: 2;
+      left: clamp(18px, 2.4vw, 32px);
+      right: clamp(18px, 2.4vw, 32px);
+      bottom: clamp(18px, 2.4vw, 32px);
+      color: rgba(255, 250, 240, .72);
+      font-size: 13px;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .program-heading {
+      display: grid;
+      gap: 12px;
+      text-align: center;
+    }
+
+    .program-heading b {
+      color: rgba(240, 207, 93, .78);
+      font-size: clamp(13px, .98vw, 15px);
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .program-heading h2 {
+      margin: 0;
+      color: var(--white);
+      font-family: var(--display);
+      font-size: var(--type-scene);
+      font-weight: 850;
+      line-height: .92;
+      letter-spacing: var(--tracking-tight);
+      text-wrap: balance;
+    }
+
+    .program-list {
+      display: grid;
+      gap: 0;
+      border-top: 1px solid rgba(255, 250, 240, .18);
+      border-bottom: 1px solid rgba(255, 250, 240, .18);
+      background: rgba(255, 250, 240, .025);
+      padding: clamp(6px, 1vw, 10px) 0;
+    }
+
+    .program-module {
+      display: grid;
+      grid-template-columns: minmax(80px, .22fr) 1fr;
+      align-items: center;
+      gap: clamp(14px, 2.3vw, 26px);
+      min-height: 58px;
+      padding: clamp(10px, 1.45vw, 16px) clamp(12px, 1.8vw, 22px);
+      border-bottom: 1px solid rgba(255, 250, 240, .12);
+      opacity: 0;
+      transform: translateY(18px);
+      background: transparent;
+      transition: border-color .2s ease, background .2s ease;
+    }
+
+    .program-module.is-active {
+      border-color: rgba(240, 207, 93, .42);
+      background: rgba(240, 207, 93, .07);
+    }
+
+    .program-module:last-child {
+      border-bottom: 0;
+    }
+
+    .program-day {
+      min-width: 0;
+      color: rgba(240, 207, 93, .74);
+      font-size: clamp(13px, 1vw, 15px);
+      font-weight: 800;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .program-title {
+      min-width: 0;
+      color: #ffffff;
+      font-size: clamp(20px, 2vw, 31px);
+      font-weight: 750;
+      letter-spacing: -.025em;
+      line-height: 1.15;
+    }
+
+    .laptop-caption {
+      width: min(620px, 100%);
+      margin: 0 auto;
+      color: var(--color-muted);
+      font-size: clamp(14px, 1.08vw, 17px);
+      font-weight: 450;
+      line-height: 1.65;
+      text-align: center;
+      letter-spacing: .01em;
+    }
+
+    .scene-finale {
+      z-index: 36;
+      opacity: 0;
+      background:
+        radial-gradient(circle at 50% 18%, rgba(215, 182, 74, .11), transparent 33%),
+        linear-gradient(180deg, rgba(255, 250, 240, .02), transparent 38%),
+        var(--color-bg);
+    }
+
+    .finale-core {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      gap: clamp(28px, 4.4vw, 54px);
+      width: min(1120px, calc(100vw - 42px));
+      transform: translate3d(0, 0, 120px);
+      text-align: center;
+    }
+
+    .finale-media {
+      opacity: .56;
+    }
+
+    .finale-media::after {
+      background:
+        linear-gradient(180deg, rgba(3, 3, 3, .76), rgba(3, 3, 3, .68)),
+        linear-gradient(90deg, rgba(3, 3, 3, .76), rgba(3, 3, 3, .34) 50%, rgba(3, 3, 3, .76));
+    }
+
+    .finale-limit,
+    .finale-apply {
+      display: grid;
+      gap: clamp(22px, 4vw, 44px);
+      grid-area: 1 / 1;
+    }
+
+    .finale-limit h2 {
+      margin: 0;
+      color: var(--white);
+      font-family: var(--display);
+      font-size: clamp(44px, 7.6vw, 116px);
+      font-weight: 850;
+      line-height: .92;
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .finale-limit p {
+      margin: 0 auto;
+      max-width: 620px;
+      color: var(--color-muted);
+      font-size: clamp(15px, 1.15vw, 18px);
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    .finale-logo-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: clamp(18px, 4vw, 52px);
+      opacity: .64;
+    }
+
+    .finale-logo-row img {
+      width: clamp(82px, 12vw, 154px);
+      max-height: 56px;
+      object-fit: contain;
+      filter: none;
+    }
+
+    .finale-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      border-top: 1px solid rgba(255, 250, 240, .18);
+      border-bottom: 1px solid rgba(255, 250, 240, .18);
+      background: rgba(255, 250, 240, .025);
+    }
+
+    .stat {
+      min-width: 0;
+      padding: clamp(24px, 5.4vw, 52px) 14px;
+      border-right: 1px solid rgba(255, 250, 240, .13);
+    }
+
+    .stat:last-child {
+      border-right: 0;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--white);
+      font-family: var(--display);
+      font-size: clamp(58px, 9vw, 136px);
+      font-weight: 850;
+      line-height: .88;
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 18px;
+      color: var(--color-muted);
+      font-size: clamp(13px, 1vw, 15px);
+      font-weight: 750;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .finale-date {
+      display: grid;
+      gap: 16px;
+    }
+
+    .finale-date b {
+      color: rgba(240, 207, 93, .78);
+      font-size: clamp(14px, 1.1vw, 17px);
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .finale-date h2 {
+      margin: 0;
+      color: var(--white);
+      font-family: var(--display);
+      font-size: clamp(60px, 8.4vw, 130px);
+      font-weight: 850;
+      line-height: .88;
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .finale-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px 18px;
+      color: var(--color-muted);
+      font-size: clamp(12px, .94vw, 14px);
+      font-weight: 650;
+      line-height: 1.45;
+      letter-spacing: .01em;
+    }
+
+    .finale-meta span {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .finale-meta span + span::before {
+      content: "";
+      width: 30px;
+      height: 1px;
+      margin-right: 18px;
+      background: rgba(240, 207, 93, .48);
+      box-shadow: none;
+    }
+
+    .finale-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      justify-self: center;
+      align-self: center;
+      height: 56px;
+      min-height: 56px;
+      padding: 0 30px;
+      border: 1px solid rgba(240, 207, 93, .72);
+      border-radius: var(--radius-cta);
+      background: linear-gradient(180deg, var(--color-gold-strong), var(--color-gold));
+      color: #080806;
+      font-size: 14px;
+      font-weight: 850;
+      letter-spacing: .015em;
+      pointer-events: auto;
+      box-shadow: var(--shadow-gold);
+      transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+    }
+
+    .finale-cta:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.05);
+      box-shadow: 0 28px 70px rgba(215, 182, 74, .28);
+    }
+
+    .debug-panel {
+      position: fixed;
+      z-index: 100;
+      right: 16px;
+      bottom: 16px;
+      display: none;
+      min-width: 190px;
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(0, 0, 0, .62);
+      color: rgba(255, 255, 255, .8);
+      font: 11px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      backdrop-filter: blur(18px);
+      pointer-events: none;
+    }
+
+    .debug-on .debug-panel {
+      display: block;
+    }
+
+    .no-js-message {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      display: grid;
+      place-items: center;
+      padding: 28px;
+      background: #030303;
+      color: white;
+      text-align: center;
+      font: 700 18px/1.4 var(--sans);
+    }
+
+    @media (max-width: 780px) {
+      .scroll-plane {
+        height: 720vh;
+      }
+
+      .top-hud {
+        top: 14px;
+        align-items: flex-start;
+      }
+
+      .brand-hud {
+        gap: 10px;
+      }
+
+      .brand-hud img {
+        width: 112px;
+      }
+
+      .brand-hud span {
+        display: none;
+      }
+
+      .progress-hud {
+        grid-template-columns: 78px;
+        justify-items: end;
+      }
+
+      .progress-track {
+        width: 78px;
+      }
+
+      .progress-hud span {
+        display: none;
+      }
+
+      .intro-logo {
+        width: 42vw;
+        transform: translate3d(0, -31vh, 0);
+      }
+
+      .intro-title {
+        top: 49%;
+        width: min(360px, calc(100vw - 36px));
+      }
+
+      .intro-kicker {
+        margin-bottom: 12px;
+        font-size: 12px;
+        line-height: 1.45;
+        letter-spacing: .01em;
+      }
+
+      .intro-title h1 {
+        font-size: clamp(42px, 14.8vw, 66px);
+        line-height: .9;
+      }
+
+      .intro-title p {
+        margin-top: 15px;
+        max-width: 320px;
+        font-size: 13px;
+        line-height: 1.6;
+        letter-spacing: .005em;
+      }
+
+      .intro-meta {
+        display: grid;
+        gap: 4px;
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 1.45;
+        letter-spacing: .005em;
+      }
+
+      .intro-meta span {
+        justify-content: center;
+      }
+
+      .intro-meta span + span::before {
+        display: none;
+      }
+
+      .intro-cta {
+        gap: 10px;
+        margin-top: 14px;
+        font-size: 12px;
+        letter-spacing: .01em;
+      }
+
+      .intro-cta::after {
+        width: 30px;
+      }
+
+      .video-caption {
+        right: 22px;
+        bottom: 72px;
+        text-align: left;
+        font-size: 13px;
+        width: min(300px, calc(100vw - 44px));
+      }
+
+      .scene-media {
+        inset: 18px;
+      }
+
+      .manifesto-line {
+        width: min(350px, calc(100vw - 36px));
+        font-size: clamp(46px, 13.5vw, 72px);
+        line-height: .94;
+      }
+
+      .manifesto-subtle {
+        display: none;
+      }
+
+      .depth-card {
+        min-height: 96px;
+        padding: 14px 16px;
+      }
+
+      .depth-card strong {
+        margin-top: 16px;
+        font-size: clamp(28px, 8.4vw, 34px);
+      }
+
+      .depth-card span {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      .depth-title p {
+        display: block;
+        max-width: 310px;
+        font-size: 13px;
+        line-height: 1.55;
+        margin-top: 14px;
+      }
+
+      .depth-title h2 {
+        font-size: clamp(50px, 14vw, 58px);
+      }
+
+      .depth-frame {
+        gap: 16px;
+        width: min(350px, calc(100vw - 32px));
+      }
+
+      .depth-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .program-panel {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        width: min(350px, calc(100vw - 32px));
+      }
+
+      .program-copy {
+        gap: 12px;
+      }
+
+      .program-media {
+        min-height: 206px;
+        order: -1;
+      }
+
+      .program-media-label {
+        font-size: 10px;
+        letter-spacing: .06em;
+      }
+
+      .program-heading {
+        gap: 8px;
+      }
+
+      .program-heading h2 {
+        font-size: clamp(34px, 9.6vw, 50px);
+      }
+
+      .program-module {
+        grid-template-columns: 64px 1fr;
+        gap: 12px;
+        min-height: 48px;
+        padding: 9px 10px;
+      }
+
+      .program-day {
+        font-size: 12px;
+        letter-spacing: .01em;
+      }
+
+      .program-title {
+        font-size: clamp(16px, 4.6vw, 21px);
+        line-height: 1.1;
+      }
+
+      .laptop-caption {
+        bottom: 12vh;
+      }
+
+      .finale-logo-row {
+        display: none;
+      }
+
+      .finale-media {
+        inset: 18px;
+      }
+
+      .finale-stats {
+        grid-template-columns: 1fr;
+      }
+
+      .finale-core {
+        gap: 18px;
+        width: min(340px, calc(100vw - 48px));
+      }
+
+      .finale-limit h2 {
+        font-size: clamp(34px, 10.5vw, 50px);
+      }
+
+      .finale-limit p {
+        font-size: 13px;
+      }
+
+      .stat {
+        padding: 15px 10px;
+      }
+
+      .stat strong {
+        font-size: clamp(48px, 17vw, 72px);
+      }
+
+      .stat span {
+        margin-top: 8px;
+        font-size: 10px;
+      }
+
+      .finale-date {
+        gap: 10px;
+      }
+
+      .finale-date b {
+        font-size: 12px;
+        letter-spacing: .01em;
+      }
+
+      .finale-date h2 {
+        font-size: clamp(42px, 13vw, 62px);
+        line-height: .9;
+      }
+
+      .finale-meta {
+        display: grid;
+        gap: 5px;
+        font-size: 12px;
+        line-height: 1.45;
+        letter-spacing: .01em;
+      }
+
+      .finale-meta span {
+        justify-content: center;
+      }
+
+      .finale-meta span + span::before {
+        display: none;
+      }
+
+      .finale-cta {
+        min-height: 52px;
+        height: 52px;
+        width: min(300px, 100%);
+      }
+
+      .stat {
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .14);
+      }
+
+      .stat:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-plane {
+        height: 260vh;
+      }
+
+      .scroll-cue span {
+        animation: none;
+      }
+
+      .cinema,
+      .world,
+      .scene-layer,
+      .scene-object {
+        transform: none !important;
+      }
+
+    }
+  </style>
+</head>
+<body class="is-loading">
+  <noscript>
+    <div class="no-js-message">Esta experiencia necesita JavaScript para controlar la narrativa con scroll.</div>
+  </noscript>
+
+  <div class="top-hud hud" aria-hidden="true">
+    <div class="brand-hud">
+      <img src="assets/logo/logo/hair-transplant-logo.png" alt="">
+      <span>26-30 octubre 2026 / CDMX</span>
+    </div>
+    <div class="progress-hud">
+      <div class="progress-track"><div class="progress-fill"></div></div>
+      <span class="progress-label">00%</span>
+    </div>
+  </div>
+
+  <div class="chapter-mark" aria-hidden="true">
+    <span class="chapter-dot"></span>
+    <span class="chapter-label">Apertura</span>
+  </div>
+
+  <div class="cinema" aria-label="Experiencia cinematografica Hair Transplant Workshop">
+    <div class="world" data-camera>
+      <div class="scene-layer scene-intro" data-scene="intro">
+        <img class="intro-logo scene-object" src="assets/logo/logo/pilula-logo-white.png" alt="PILULA MedPlanner">
+        <div class="intro-title scene-object">
+          <h1>Hair Transplant Workshop</h1>
+          <p>Workshop hands-on de trasplante capilar para médicos. 26-30 octubre 2026.</p>
+          <a class="intro-cta" href="https://wa.me/525532019586?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20el%20Workshop%20hands-on%20de%20trasplante%20capilar%20del%2026%20al%2030%20de%20octubre%202026%20en%20Latitud%20Polanco%2C%20CDMX." target="_blank" rel="noopener noreferrer">Solicitar información</a>
+        </div>
+        <div class="scroll-cue" aria-hidden="true"><span></span></div>
+      </div>
+
+      <div class="scene-layer scene-video" data-scene="video">
+        <div class="film-plane scene-object">
+          <img src="assets/hero/hero-01.jpg" alt="">
+          <video class="scrub-video" muted playsinline preload="auto" poster="assets/hero/hero-01.jpg">
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="video-caption scene-object">Pacientes reales en Latitud Polanco, CDMX. Técnica guiada y decisiones clínicas dentro del flujo quirúrgico.</div>
+      </div>
+
+      <div class="scene-layer scene-manifesto" data-scene="manifesto">
+        <div class="manifesto-line" data-line="0">No vienes a escuchar.</div>
+        <div class="manifesto-line" data-line="1">Vienes a operar.</div>
+        <div class="manifesto-line" data-line="2">Pacientes reales.</div>
+        <div class="manifesto-line" data-line="3">Con criterio clínico.</div>
+        <div class="manifesto-subtle">Cuando la técnica se practica con criterio, el aprendizaje cambia de escala.</div>
+      </div>
+
+      <div class="scene-layer scene-depth" data-scene="depth">
+        <figure class="scene-media depth-media scene-object" aria-hidden="true">
+          <img src="assets/hero/hero-01.jpg" alt="">
+        </figure>
+        <div class="depth-frame scene-object">
+          <div class="depth-title">
+            <h2>Del criterio al quirófano.</h2>
+            <p>Práctica real, decisiones clínicas y mentoría directa en una semana intensiva.</p>
+          </div>
+          <div class="depth-grid">
+            <div class="depth-card card-one">
+              <b>01</b>
+              <strong>Hands-on</strong>
+              <span>Práctica guiada en flujo real de microimplante capilar.</span>
+            </div>
+            <div class="depth-card card-two">
+              <b>02</b>
+              <strong>Casos reales</strong>
+              <span>Pacientes, indicaciones y decisiones clínicas en vivo.</span>
+            </div>
+            <div class="depth-card card-three">
+              <b>03</b>
+              <strong>Mentoría</strong>
+              <span>Mentoría personalizada durante la experiencia.</span>
+            </div>
+            <div class="depth-card card-four">
+              <b>04</b>
+              <strong>Comunidad médica</strong>
+              <span>Una red de médicos enfocada en técnica, criterio y práctica.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scene-layer scene-laptop" data-scene="laptop">
+        <div class="program-panel scene-object">
+          <div class="program-copy">
+            <div class="program-heading">
+              <b>Programa</b>
+              <h2>Cinco días de práctica clínica.</h2>
+            </div>
+            <div class="program-list">
+              <div class="program-module" data-module="0">
+                <span class="program-day">Día 1</span>
+                <strong class="program-title">Fundamentos y diseño</strong>
+              </div>
+              <div class="program-module" data-module="1">
+                <span class="program-day">Día 2</span>
+                <strong class="program-title">Extracción</strong>
+              </div>
+              <div class="program-module" data-module="2">
+                <span class="program-day">Día 3</span>
+                <strong class="program-title">Clasificación e implantación</strong>
+              </div>
+              <div class="program-module" data-module="3">
+                <span class="program-day">Día 4</span>
+                <strong class="program-title">Casos supervisados</strong>
+              </div>
+              <div class="program-module" data-module="4">
+                <span class="program-day">Día 5</span>
+                <strong class="program-title">Cierre clínico y comunidad</strong>
+              </div>
+            </div>
+            <div class="laptop-caption">Un recorrido para pasar de observar a decidir con criterio.</div>
+          </div>
+          <figure class="program-media" aria-hidden="true">
+            <div class="program-media-item">
+              <img src="assets/workshop/workshop-diseno-linea-capilar.jpg" alt="">
+              <span class="program-media-label">Diseño y planificación</span>
+            </div>
+            <div class="program-media-item">
+              <video muted playsinline loop preload="metadata">
+                <source src="assets/videos/marcaje-extraccion-clasificacion.mp4" type="video/mp4">
+              </video>
+              <span class="program-media-label">Extracción</span>
+            </div>
+            <div class="program-media-item">
+              <img src="assets/workshop/practica-tecnica.jpg" alt="">
+              <span class="program-media-label">Clasificación</span>
+            </div>
+            <div class="program-media-item">
+              <video muted playsinline loop preload="metadata">
+                <source src="assets/videos/implantacion-capilar.mp4" type="video/mp4">
+              </video>
+              <span class="program-media-label">Implantación supervisada</span>
+            </div>
+            <div class="program-media-item">
+              <img src="assets/workshop/workshop-grupo-geva.jpg" alt="">
+              <span class="program-media-label">Comunidad médica</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+
+      <div class="scene-layer scene-finale" data-scene="finale">
+        <figure class="scene-media finale-media scene-object" aria-hidden="true">
+          <img src="assets/diplomas/grupo-diploma.jpg" alt="">
+        </figure>
+        <div class="finale-core scene-object">
+          <div class="finale-limit">
+            <div class="finale-stats">
+              <div class="stat"><strong>16</strong><span>médicos</span></div>
+              <div class="stat"><strong>8</strong><span>pacientes voluntarios</span></div>
+              <div class="stat"><strong>5</strong><span>días</span></div>
+            </div>
+            <h2>Cupo extremadamente limitado.</h2>
+            <p>Una experiencia práctica exige pocos lugares, pacientes reales y acompañamiento cercano.</p>
+          </div>
+          <div class="finale-apply">
+            <div class="finale-logo-row">
+              <img src="assets/logo/logo/hair-transplant-logo.png" alt="Hair Transplant Workshop">
+              <img src="assets/logo/logo/geva-logo-white.png" alt="GeVa">
+              <img src="assets/logo/logo/pilula-logo-white.png" alt="PILULA MedPlanner">
+            </div>
+            <div class="finale-date">
+              <b>Workshop hands-on de trasplante capilar</b>
+              <h2>26-30 octubre 2026</h2>
+              <div class="finale-meta">
+                <span>Latitud Polanco, CDMX</span>
+                <span>Aplicación abierta</span>
+              </div>
+            </div>
+            <a class="finale-cta" href="https://wa.me/525532019586?text=Hola%2C%20me%20interesa%20recibir%20informaci%C3%B3n%20sobre%20el%20Workshop%20hands-on%20de%20trasplante%20capilar%20del%2026%20al%2030%20de%20octubre%202026%20en%20Latitud%20Polanco%2C%20CDMX." target="_blank" rel="noopener noreferrer">Solicitar mi lugar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="scroll-plane" aria-hidden="true"></main>
+
+  <div class="debug-panel" aria-hidden="true">
+    <div>progress: <span data-debug="progress">0.000</span></div>
+    <div>scene: <span data-debug="scene">intro</span></div>
+    <div>camera.z: <span data-debug="cameraZ">0</span></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    (() => {
+      if (window.gsap && window.ScrollTrigger) return;
+      window.__storytellingMotionFallback = true;
+
+      const toNodes = (target) => {
+        if (typeof target === "string") return [...document.querySelectorAll(target)];
+        if (target instanceof Element || target === window || target === document) return [target];
+        if (target && typeof target.length === "number") return [...target].filter(Boolean);
+        return target ? [target] : [];
+      };
+
+      const transformKeys = new Set(["x", "y", "z", "xPercent", "yPercent", "scale", "rotate", "rotateX", "rotateY", "rotateZ"]);
+      const unit = (value) => typeof value === "number" ? `${value}px` : value;
+
+      const applyTransform = (node, state) => {
+        const rotateZ = state.rotateZ ?? state.rotate ?? 0;
+        node.style.transform = [
+          `translate(${state.xPercent ?? 0}%, ${state.yPercent ?? 0}%)`,
+          `translate3d(${unit(state.x ?? 0)}, ${unit(state.y ?? 0)}, ${unit(state.z ?? 0)})`,
+          `rotateX(${state.rotateX ?? 0}deg)`,
+          `rotateY(${state.rotateY ?? 0}deg)`,
+          `rotateZ(${rotateZ}deg)`,
+          `scale(${state.scale ?? 1})`
+        ].join(" ");
+      };
+
+      window.gsap = {
+        registerPlugin() {},
+        set(target, vars) {
+          toNodes(target).forEach((node) => {
+            if (!(node instanceof Element)) return;
+            const state = node.__fallbackTransform || {};
+            Object.entries(vars).forEach(([key, value]) => {
+              if (key === "autoAlpha") {
+                node.style.opacity = value;
+                node.style.visibility = value <= .001 ? "hidden" : "visible";
+                return;
+              }
+              if (transformKeys.has(key)) {
+                state[key] = value;
+                return;
+              }
+              if (key === "transformPerspective" || key === "force3D") return;
+              node.style[key] = typeof value === "number" && key !== "opacity" ? `${value}px` : value;
+            });
+            node.__fallbackTransform = state;
+            applyTransform(node, state);
+          });
+        }
+      };
+
+      window.ScrollTrigger = {
+        create(config) {
+          let ticking = false;
+          const read = () => {
+            ticking = false;
+            const max = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = max > 0 ? window.scrollY / max : 0;
+            config.onUpdate?.({ progress: Math.max(0, Math.min(1, progress)) });
+          };
+          const request = () => {
+            if (!ticking) {
+              ticking = true;
+              requestAnimationFrame(read);
+            }
+          };
+          window.addEventListener("scroll", request, { passive: true });
+          window.addEventListener("resize", request);
+          request();
+          return { kill() {} };
+        },
+        refresh() {}
+      };
+    })();
+  </script>
+  <script>
+    (() => {
+      const Motion = {
+        clamp(value, min = 0, max = 1) {
+          return Math.min(max, Math.max(min, value));
+        },
+        map(value, inMin, inMax, outMin = 0, outMax = 1) {
+          if (inMax === inMin) return outMin;
+          const t = (value - inMin) / (inMax - inMin);
+          return outMin + (outMax - outMin) * t;
+        },
+        lerp(start, end, t) {
+          return start + (end - start) * t;
+        },
+        smooth(t) {
+          const x = Motion.clamp(t);
+          return x * x * (3 - 2 * x);
+        },
+        easeInOut(t) {
+          const x = Motion.clamp(t);
+          return x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+        },
+        range(progress, start, end) {
+          return Motion.clamp(Motion.map(progress, start, end));
+        },
+        pulse(progress, start, peak, end) {
+          if (progress <= start || progress >= end) return 0;
+          if (progress <= peak) return Motion.smooth(Motion.map(progress, start, peak));
+          return 1 - Motion.smooth(Motion.map(progress, peak, end));
+        },
+        hold(progress, start, inEnd, outStart, end) {
+          if (progress <= start || progress >= end) return 0;
+          if (progress < inEnd) return Motion.smooth(Motion.map(progress, start, inEnd));
+          if (progress <= outStart) return 1;
+          return 1 - Motion.smooth(Motion.map(progress, outStart, end));
+        },
+        between(progress, start, end) {
+          return progress >= start && progress <= end;
+        }
+      };
+
+      class VirtualCamera {
+        constructor(node) {
+          this.node = node;
+          this.state = { x: 0, y: 0, z: 0, scale: 1, rotateX: 0, rotateY: 0, rotateZ: 0 };
+        }
+
+        move(nextState) {
+          this.state = { ...this.state, ...nextState };
+          this.apply();
+        }
+
+        apply() {
+          gsap.set(this.node, {
+            x: this.state.x,
+            y: this.state.y,
+            z: this.state.z,
+            scale: this.state.scale,
+            rotateX: this.state.rotateX,
+            rotateY: this.state.rotateY,
+            rotateZ: this.state.rotateZ,
+            transformPerspective: 2200,
+            force3D: true
+          });
+        }
+      }
+
+      class SceneManager {
+        constructor({ camera, progressNode, chapterNode, debug }) {
+          this.camera = camera;
+          this.scenes = [];
+          this.activeScene = "";
+          this.progressNode = progressNode;
+          this.chapterNode = chapterNode;
+          this.debug = debug;
+        }
+
+        register(scene) {
+          this.scenes.push(scene);
+          this.scenes.sort((a, b) => a.start - b.start);
+          return this;
+        }
+
+        update(progress) {
+          const global = Motion.clamp(progress);
+          const cameraState = this.resolveCamera(global);
+          this.camera.move(cameraState);
+          this.scenes.forEach((scene) => {
+            const local = Motion.range(global, scene.start, scene.end);
+            const active = Motion.between(global, scene.start, scene.end);
+            scene.update(local, global, active);
+            if (active) this.activeScene = scene.id;
+          });
+          this.updateHud(global, cameraState);
+        }
+
+        resolveCamera(progress) {
+          if (isReduced) {
+            return { x: 0, y: 0, z: 0, scale: 1, rotateX: 0, rotateY: 0, rotateZ: 0 };
+          }
+          const motionScale = isMobile ? .62 : 1;
+          const pushIn = Motion.smooth(Motion.range(progress, 0, .16));
+          const drift = Motion.smooth(Motion.range(progress, .06, .28));
+          const settle = Motion.smooth(Motion.range(progress, .32, .4));
+          const active = 1 - settle;
+          const scale = isMobile ? 1 + pushIn * .035 : 1 + pushIn * .07;
+          return {
+            x: Motion.lerp(0, -28, drift) * motionScale * active,
+            y: Motion.lerp(0, 16, pushIn) * motionScale * active,
+            z: Motion.lerp(0, 150, pushIn) * active,
+            scale: Motion.lerp(1, scale, active),
+            rotateX: 0,
+            rotateY: Motion.lerp(0, -2.2, drift) * motionScale * active,
+            rotateZ: Motion.lerp(0, -.16, drift) * motionScale * active
+          };
+        }
+
+        updateHud(progress, cameraState) {
+          gsap.set(".progress-fill", { scaleX: progress });
+          this.progressNode.textContent = `${Math.round(progress * 100).toString().padStart(2, "0")}%`;
+          this.chapterNode.textContent = this.getChapter(progress);
+          if (this.debug.progress) this.debug.progress.textContent = progress.toFixed(3);
+          if (this.debug.scene) this.debug.scene.textContent = this.activeScene;
+          if (this.debug.cameraZ) this.debug.cameraZ.textContent = Math.round(cameraState.z);
+        }
+
+        getChapter(progress) {
+          const current = [...this.scenes].reverse().find((scene) => progress >= scene.start);
+          return current ? current.label : "Apertura";
+        }
+      }
+
+      const set = (target, props) => gsap.set(target, props);
+      const isReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const isMobile = window.matchMedia("(max-width: 780px)").matches;
+      const hasGsap = Boolean(window.gsap && window.ScrollTrigger);
+      let targetProgress = 0;
+      let currentProgress = 0;
+      let timelineFrame = 0;
+      const camera = new VirtualCamera(document.querySelector("[data-camera]"));
+      const manager = new SceneManager({
+        camera,
+        progressNode: document.querySelector(".progress-label"),
+        chapterNode: document.querySelector(".chapter-label"),
+        debug: {
+          progress: document.querySelector("[data-debug='progress']"),
+          scene: document.querySelector("[data-debug='scene']"),
+          cameraZ: document.querySelector("[data-debug='cameraZ']")
+        }
+      });
+
+      const intro = {
+        layer: document.querySelector(".scene-intro"),
+        logo: document.querySelector(".intro-logo"),
+        title: document.querySelector(".intro-title"),
+        cue: document.querySelector(".scroll-cue")
+      };
+      const videoScene = {
+        layer: document.querySelector(".scene-video"),
+        plane: document.querySelector(".film-plane"),
+        video: document.querySelector(".scrub-video"),
+        caption: document.querySelector(".video-caption")
+      };
+      const manifesto = {
+        layer: document.querySelector(".scene-manifesto"),
+        lines: [...document.querySelectorAll(".manifesto-line")],
+        subtle: document.querySelector(".manifesto-subtle")
+      };
+      const depth = {
+        layer: document.querySelector(".scene-depth"),
+        media: document.querySelector(".depth-media"),
+        frame: document.querySelector(".depth-frame"),
+        cards: [...document.querySelectorAll(".depth-card")],
+        title: document.querySelector(".depth-title")
+      };
+      const laptop = {
+        layer: document.querySelector(".scene-laptop"),
+        space: document.querySelector(".program-panel"),
+        mediaItems: [...document.querySelectorAll(".program-media-item")],
+        modules: [...document.querySelectorAll(".program-module")],
+        caption: document.querySelector(".laptop-caption")
+      };
+      const finale = {
+        layer: document.querySelector(".scene-finale"),
+        core: document.querySelector(".finale-core"),
+        media: document.querySelector(".finale-media"),
+        limit: document.querySelector(".finale-limit"),
+        apply: document.querySelector(".finale-apply"),
+        stats: [...document.querySelectorAll(".stat")],
+        logos: document.querySelector(".finale-logo-row"),
+        meta: document.querySelector(".finale-meta"),
+        cta: document.querySelector(".finale-cta")
+      };
+
+      manager
+        .register({
+          id: "intro",
+          label: "Apertura",
+          start: 0,
+          end: .18,
+          update(local, global) {
+            const leave = Motion.smooth(Motion.range(global, .025, .18));
+            set(intro.layer, { autoAlpha: 1 - Motion.range(global, .13, .2) });
+            set(intro.logo, {
+              autoAlpha: .94 - Motion.range(global, .055, .14),
+              y: Motion.lerp(isMobile ? -190 : -220, isMobile ? -232 : -275, leave),
+              scale: 1 + Motion.lerp(0, .06, leave),
+              filter: "blur(0px)"
+            });
+            set(intro.title, {
+              xPercent: -50,
+              yPercent: -50,
+              autoAlpha: 1 - Motion.range(global, .115, .19),
+              y: -Motion.lerp(0, 58, leave),
+              z: Motion.lerp(70, 210, local),
+              scale: Motion.lerp(1, 1.035, local),
+              filter: "blur(0px)"
+            });
+            set(intro.cue, { autoAlpha: 1 - Motion.range(global, .018, .055) });
+          }
+        })
+        .register({
+          id: "video",
+          label: "Inmersión",
+          start: .06,
+          end: .32,
+          update(local, global) {
+            const enter = Motion.smooth(Motion.range(global, .06, .13));
+            const exit = Motion.smooth(Motion.range(global, .28, .35));
+            set(videoScene.layer, { autoAlpha: enter * (1 - exit) });
+            set(videoScene.plane, {
+              scale: Motion.lerp(.82, 1.08, Motion.easeInOut(local)),
+              rotateX: Motion.lerp(6, 0, enter),
+              rotateY: Motion.lerp(-5, 0, enter) + Motion.lerp(0, 2.4, exit),
+              y: Motion.lerp(42, 0, enter) - Motion.lerp(0, 44, exit),
+              filter: "blur(0px)"
+            });
+            set(videoScene.caption, {
+              autoAlpha: Motion.hold(global, .14, .18, .29, .34),
+              y: Motion.lerp(24, 0, enter) - Motion.lerp(0, 28, exit)
+            });
+            scrubVideo(videoScene.video, Motion.range(global, .06, .32));
+          }
+        })
+        .register({
+          id: "manifesto",
+          label: "Manifiesto",
+          start: .23,
+          end: .4,
+          update(local, global) {
+            const enter = Motion.smooth(Motion.range(global, .23, .265));
+            const exit = Motion.smooth(Motion.range(global, .37, .42));
+            set(manifesto.layer, { autoAlpha: enter * (1 - exit) });
+            manifesto.lines.forEach((line, index) => {
+              const start = index * .22;
+              const inEnd = start + .055;
+              const outStart = start + .17;
+              const end = start + .225;
+              const visibility = Motion.hold(local, start, inEnd, outStart, end);
+              set(line, {
+                xPercent: -50,
+                yPercent: -50,
+                autoAlpha: visibility,
+                y: Motion.lerp(34, 0, Motion.smooth(Motion.range(local, start, inEnd))) - Motion.lerp(0, 38, Motion.smooth(Motion.range(local, outStart, end))),
+                z: Motion.lerp(40, 118, Motion.smooth(Motion.range(local, start, end))),
+                scale: Motion.lerp(.9, .97, visibility),
+                filter: "blur(0px)"
+              });
+            });
+            set(manifesto.subtle, {
+              xPercent: -50,
+              autoAlpha: Motion.hold(local, .78, .84, .96, .995),
+              y: Motion.lerp(18, 0, Motion.range(local, .78, .84))
+            });
+          }
+        })
+        .register({
+          id: "depth",
+          label: "Capas",
+          start: .43,
+          end: .61,
+          update(local, global) {
+            const enter = Motion.smooth(Motion.range(global, .43, .465));
+            const exit = Motion.smooth(Motion.range(global, .575, .625));
+            set(depth.layer, { autoAlpha: enter * (1 - exit) });
+            set(depth.media, {
+              autoAlpha: Motion.hold(local, 0, .14, .86, 1),
+              y: Motion.lerp(12, 0, enter) - Motion.lerp(0, 14, exit),
+              scale: Motion.lerp(1.02, 1, enter)
+            });
+            set(depth.frame, {
+              autoAlpha: enter * (1 - exit),
+              x: 0,
+              y: Motion.lerp(28, 0, enter) - Motion.lerp(0, 24, exit),
+              z: 0,
+              scale: 1,
+              rotateX: 0,
+              rotateY: 0,
+              filter: "blur(0px)"
+            });
+            const titleVisible = Motion.hold(local, .02, .1, .82, .94);
+            set(depth.title, {
+              autoAlpha: titleVisible,
+              x: 0,
+              y: Motion.lerp(14, 0, Motion.range(local, .02, .1)),
+              z: 0,
+              scale: 1,
+              rotateX: 0,
+              rotateY: 0,
+              filter: "blur(0px)"
+            });
+            depth.cards.forEach((card, index) => {
+              const cardStart = .34 + index * .07;
+              const visible = Motion.hold(local, cardStart, cardStart + .12, .84, .96);
+              set(card, {
+                autoAlpha: visible,
+                x: 0,
+                y: Motion.lerp(18, 0, Motion.smooth(Motion.range(local, cardStart, cardStart + .12))),
+                z: 0,
+                scale: 1,
+                rotateY: 0,
+                rotateX: 0,
+                filter: "blur(0px)"
+              });
+            });
+          }
+        })
+        .register({
+          id: "laptop",
+          label: "Programa",
+          start: .64,
+          end: .825,
+          update(local, global) {
+            const enter = Motion.smooth(Motion.range(global, .64, .675));
+            const exit = Motion.smooth(Motion.range(global, .805, .835));
+            set(laptop.layer, { autoAlpha: enter * (1 - exit) });
+            set(laptop.space, {
+              autoAlpha: enter * (1 - exit),
+              x: 0,
+              y: Motion.lerp(26, 0, enter) - Motion.lerp(0, 24, exit),
+              z: 0,
+              scale: 1,
+              rotateX: 0,
+              rotateY: 0,
+              filter: "blur(0px)"
+            });
+            const activeIndex = Math.min(4, Math.max(0, Math.floor(Motion.clamp((local - .12) / .72) * 5)));
+            laptop.modules.forEach((module, index) => {
+              const rowStart = .08 + index * .09;
+              const visible = Motion.range(local, rowStart, rowStart + .14);
+              module.classList.toggle("is-active", index === activeIndex);
+              set(module, {
+                autoAlpha: visible,
+                y: Motion.lerp(16, 0, Motion.smooth(visible)),
+                scale: 1
+              });
+            });
+            laptop.mediaItems.forEach((item, index) => {
+              const isActive = index === activeIndex;
+              set(item, {
+                autoAlpha: isActive ? 1 : 0,
+                scale: isActive ? 1 : 1.015
+              });
+              const video = item.querySelector("video");
+              if (video) {
+                if (isActive && laptop.layer && Number(gsap.getProperty(laptop.layer, "opacity")) > .2) {
+                  video.play().catch(() => {});
+                } else {
+                  video.pause();
+                }
+              }
+            });
+            set(laptop.caption, {
+              autoAlpha: Motion.range(local, .68, .82),
+              y: Motion.lerp(12, 0, Motion.range(local, .68, .82))
+            });
+          }
+        })
+        .register({
+          id: "finale",
+          label: "Cierre",
+          start: .82,
+          end: 1,
+          update(local, global) {
+            const enter = Motion.smooth(Motion.range(global, .82, .86));
+            set(finale.layer, { autoAlpha: enter });
+            set(finale.core, {
+              y: Motion.lerp(46, 0, enter),
+              z: Motion.lerp(10, 46, Motion.smooth(local)),
+              scale: Motion.lerp(.95, 1, enter),
+              filter: "blur(0px)"
+            });
+            set(finale.media, {
+              autoAlpha: Motion.hold(local, 0, .16, .94, 1),
+              scale: Motion.lerp(1.02, 1, enter)
+            });
+            set(finale.limit, {
+              autoAlpha: Motion.hold(local, .04, .16, .48, .6),
+              y: Motion.lerp(26, 0, Motion.range(local, .04, .16)) - Motion.lerp(0, 18, Motion.range(local, .48, .6))
+            });
+            set(finale.apply, {
+              autoAlpha: Motion.range(local, .5, .64),
+              y: Motion.lerp(24, 0, Motion.range(local, .5, .64))
+            });
+            set(finale.logos, {
+              autoAlpha: Motion.range(local, .5, .62),
+              y: Motion.lerp(20, 0, Motion.range(local, .5, .62))
+            });
+            finale.stats.forEach((stat, index) => {
+              const rise = Motion.range(local, .08 + index * .07, .27 + index * .07);
+              set(stat, {
+                autoAlpha: rise,
+                y: Motion.lerp(28, 0, Motion.smooth(rise))
+              });
+            });
+            set(finale.meta, {
+              autoAlpha: Motion.range(local, .56, .7),
+              y: Motion.lerp(12, 0, Motion.range(local, .56, .7))
+            });
+            set(finale.cta, {
+              autoAlpha: Motion.range(local, .62, .76),
+              y: Motion.lerp(18, 0, Motion.range(local, .62, .76))
+            });
+          }
+        });
+
+      function scrubVideo(video, progress) {
+        if (!video || !Number.isFinite(video.duration) || video.duration <= 0) return;
+        const target = Math.min(video.duration - .05, video.duration * Motion.clamp(progress));
+        if (Math.abs(video.currentTime - target) > .08) {
+          try {
+            video.currentTime = target;
+          } catch (error) {
+            video.play().then(() => video.pause()).catch(() => {});
+          }
+        }
+      }
+
+      function nativeProgress() {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        return max > 0 ? window.scrollY / max : 0;
+      }
+
+      function setTargetProgress(progress) {
+        targetProgress = Motion.clamp(progress);
+      }
+
+      function runTimeline() {
+        const smoothing = isReduced ? 1 : .14;
+        currentProgress += (targetProgress - currentProgress) * smoothing;
+        if (Math.abs(targetProgress - currentProgress) < .00008) {
+          currentProgress = targetProgress;
+        }
+        manager.update(currentProgress);
+        timelineFrame = requestAnimationFrame(runTimeline);
+      }
+
+      function connectScroll() {
+        if (hasGsap) {
+          gsap.registerPlugin(ScrollTrigger);
+          ScrollTrigger.create({
+            trigger: ".scroll-plane",
+            start: "top top",
+            end: "bottom bottom",
+            onUpdate: (self) => setTargetProgress(self.progress)
+          });
+          ScrollTrigger.refresh();
+        } else {
+          const onScroll = () => setTargetProgress(nativeProgress());
+          window.addEventListener("scroll", onScroll, { passive: true });
+          window.addEventListener("resize", onScroll);
+          onScroll();
+        }
+      }
+
+      function boot() {
+        document.body.classList.remove("is-loading");
+        if (new URLSearchParams(window.location.search).has("debug")) {
+          document.body.classList.add("debug-on");
+        }
+        if (isReduced) {
+          document.body.classList.add("reduced-motion");
+        }
+        set(".scene-layer", { autoAlpha: 0 });
+        set(".scene-intro", { autoAlpha: 1 });
+        laptop.modules.forEach((module, index) => set(module, { autoAlpha: index === 0 ? 1 : 0 }));
+        targetProgress = nativeProgress();
+        currentProgress = targetProgress;
+        manager.update(currentProgress);
+        connectScroll();
+        if (!timelineFrame) runTimeline();
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", boot);
+      } else {
+        boot();
+      }
+    })();
+  </script>
+</body>
+</html>
