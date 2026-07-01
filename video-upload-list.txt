@@ -1,0 +1,7 @@
+assets/videos/hero-video.mp4
+assets/videos/workshop-aula-video.mp4
+assets/testimonios/testimonio-medico-01.mp4
+assets/testimonios/testimonio-medico-02.mp4
+assets/testimonios/testimonio-medico-03.mp4
+assets/testimonios/testimonio-paciente-01.mp4
+assets/testimonios/testimonio-paciente-02.mp4

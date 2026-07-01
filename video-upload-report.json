@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-06-20T15:02:52.860Z",
+  "totalVideos": 7,
+  "uploads": [
+    {
+      "localPath": "assets/videos/hero-video.mp4",
+      "fileName": "hero-video.mp4",
+      "status": "uploaded",
+      "sizeBytes": 27432827,
+      "size": "26.16 MB",
+      "secureUrl": "https://res.cloudinary.com/dvwqtmjk0/video/upload/v1781967758/pilula/videos/hero-video.mp4"
+    },
+    {
+      "localPath": "assets/videos/workshop-aula-video.mp4",
+      "fileName": "workshop-aula-video.mp4",
+      "status": "uploaded",
+      "sizeBytes": 1319671,
+      "size": "1.26 MB",
+      "secureUrl": "https://res.cloudinary.com/dvwqtmjk0/video/upload/v1781967760/pilula/videos/workshop-aula-video.mp4"
+    },
+    {
+      "localPath": "assets/testimonios/testimonio-medico-01.mp4",
+      "fileName": "testimonio-medico-01.mp4",
+      "status": "uploaded",
+      "sizeBytes": 26746743,
+      "size": "25.51 MB",
+      "secureUrl": "https://res.cloudinary.com/dvwqtmjk0/video/upload/v1781967762/pilula/videos/testimonio-medico-01.mp4"
+    },
+    {
+      "localPath": "assets/testimonios/testimonio-medico-02.mp4",
+      "fileName": "testimonio-medico-02.mp4",
+      "status": "uploaded",
+      "sizeBytes": 5906388,
+      "size": "5.63 MB",
+      "secureUrl": "https://res.cloudinary.com/dvwqtmjk0/video/upload/v1781967764/pilula/videos/testimonio-medico-02.mp4"
+    },
+    {
+      "localPath": "assets/testimonios/testimonio-medico-03.mp4",
+      "fileName": "testimonio-medico-03.mp4",
+      "status": "uploaded",
+      "sizeBytes": 8690863,
+      "size": "8.29 MB",
+      "secureUrl": "https://res.cloudinary.com/dvwqtmjk0/video/upload/v1781967766/pilula/videos/testimonio-medico-03.mp4"
+    },
+    {
+      "localPath": "assets/testimonios/testimonio-paciente-01.mp4",
+      "fileName": "testimonio-paciente-01.mp4",
+      "status": "uploaded",
+      "sizeBytes": 20480801,
+      "size": "19.53 MB",
+      "secureUrl": "https://res.cloudinary.com/dvwqtmjk0/video/upload/v1781967768/pilula/videos/testimonio-paciente-01.mp4"
+    },
+    {
+      "localPath": "assets/testimonios/testimonio-paciente-02.mp4",
+      "fileName": "testimonio-paciente-02.mp4",
+      "status": "uploaded",
+      "sizeBytes": 22903491,
+      "size": "21.84 MB",
+      "secureUrl": "https://res.cloudinary.com/dvwqtmjk0/video/upload/v1781967771/pilula/videos/testimonio-paciente-02.mp4"
+    }
+  ]
+}
